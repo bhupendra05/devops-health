@@ -1,0 +1,19 @@
+hosts:
+  - name: web-01
+    hostname: 192.168.1.10
+    user: ubuntu
+    port: 22
+    key_file: ~/.ssh/id_rsa
+    tags: [web, production]
+
+  - name: db-01
+    hostname: 192.168.1.20
+    user: ubuntu
+    key_file: ~/.ssh/id_rsa
+    tags: [database, production]
+
+  - name: dev-server
+    hostname: dev.example.com
+    user: admin
+    key_file: ~/.ssh/id_ed25519
+    tags: [development]
